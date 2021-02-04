@@ -1,0 +1,301 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="11c04e87-1166-44b6-8b96-dc36cbbbddba" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>v Sales</ID>
+  <Name>v Sales</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+      <Value>dbo_vSales</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="9be28d68-71f6-4302-ab65-f155b01d347b">
+    <DataSourceViewID>Coursework Tv DW</DataSourceViewID>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="b35f3303-6a7b-4fd3-bbb6-9c51271b3405">
+      <ID>3D</ID>
+      <Name>3D</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="408f7669-2842-4420-b6c3-8f8f321a04a4">
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="375a2921-2537-4972-836f-a96b49be3661">
+            <TableID>dbo_vSales</TableID>
+            <ColumnID>_x0033_D</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="21e7090c-d297-45c0-a8dd-645ce2e5d977">
+      <ID>Age Group</ID>
+      <Name>Age Group</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f944ad37-6c86-42fa-8cd1-78a1286f2a7a">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="464f45d0-3214-4274-baad-f26b5f3a78f9">
+            <TableID>dbo_vSales</TableID>
+            <ColumnID>ageGroup</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="49564a8e-4c0b-4e64-8551-41021883e5c6">
+      <ID>Brand Name</ID>
+      <Name>Brand Name</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bc7a4e69-6ab8-4f9f-8c54-9d03790cc15d">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1ecbad94-3e1f-469b-9f9f-3adcc32e9c30">
+            <TableID>dbo_vSales</TableID>
+            <ColumnID>brandName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="f467ed14-c22b-42b2-8dea-d7103522c091">
+      <ID>Diagonal Group</ID>
+      <Name>Diagonal Group</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a0d0e617-7811-4643-8fdc-471d7a2008e1">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5cff9e9d-8d37-481c-be23-efdbf488047a">
+            <TableID>dbo_vSales</TableID>
+            <ColumnID>diagonalGroup</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="d885f9d3-f6ec-417e-a6c7-196ed96c4e27">
+      <ID>Gender</ID>
+      <Name>Gender</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b84e75ab-b9b4-495d-ac25-892aaf4edfd6">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6c584bbf-0be7-499a-8754-c834e4d26b9b">
+            <TableID>dbo_vSales</TableID>
+            <ColumnID>gender</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="28869e1e-7b17-476b-a362-0dba0a6e1ce6">
+      <ID>Income Group</ID>
+      <Name>Income Group</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="93161514-7e9b-4a5c-9c04-cca8492ab280">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7b769300-5fd9-42c2-9090-2b774f5a04f4">
+            <TableID>dbo_vSales</TableID>
+            <ColumnID>incomeGroup</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="9eea8045-269c-4644-a02e-8d0f2014a34f">
+      <ID>Marital Status</ID>
+      <Name>Marital Status</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="160f6081-20b0-47a3-9b22-01e1ced348c0">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a24eec98-457f-472b-b0a3-47ba90bed7dc">
+            <TableID>dbo_vSales</TableID>
+            <ColumnID>maritalStatus</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="42e5eea7-e36c-4735-b8cf-243e3598de2f">
+      <ID>Resolution</ID>
+      <Name>Resolution</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f48fe465-ecae-4038-aea5-d8f81e1ab77e">
+          <DataType>WChar</DataType>
+          <DataSize>25</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9c453a36-ba22-492e-b0e0-a10b57ce1b8d">
+            <TableID>dbo_vSales</TableID>
+            <ColumnID>resolution</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="2b096e6d-b41d-4e66-a1e9-932d0931b16d">
+      <ID>Sales Key</ID>
+      <Name>Sales Key</Name>
+      <IsKey>true</IsKey>
+      <Type>Long</Type>
+      <Content>Key</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d84b7d5f-ef1c-4d78-9b52-920098f6091d">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="898cb206-a56c-43c8-b322-809f0bcc2108">
+            <TableID>dbo_vSales</TableID>
+            <ColumnID>salesKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="e7c1d941-5219-4e59-be3e-148297b1b891">
+      <ID>Selling Price</ID>
+      <Name>Selling Price</Name>
+      <Type>Double</Type>
+      <Content>Discretized</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b8196a30-8c6e-4719-9989-1b3da04e7de9">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="85b34402-b908-4fa1-b40f-e6137e106310">
+            <TableID>dbo_vSales</TableID>
+            <ColumnID>sellingPrice</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="a7a92f4f-bcc4-48fb-befe-0cc194697cd7">
+      <ID>Smart TV</ID>
+      <Name>Smart TV</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ec69b38d-20d6-48bf-a74b-e282fd98d17a">
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6afb2b20-42f0-4705-9ecd-e01e547ae760">
+            <TableID>dbo_vSales</TableID>
+            <ColumnID>smartTV</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="12196177-3e3f-47b9-9878-0e7fedfcb1a7">
+      <ID>v Sales</ID>
+      <Name>v Sales</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Clustering</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="738554a8-b9f0-4028-9177-d69215de3f45">
+          <ID>3D</ID>
+          <Name>3D</Name>
+          <SourceColumnID>3D</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="2da4477f-fd67-4ed8-b0b8-0f38154509f9">
+          <ID>Age Group</ID>
+          <Name>Age Group</Name>
+          <SourceColumnID>Age Group</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="4fe21a89-9b16-4304-a1eb-b531540bd167">
+          <ID>Brand Name</ID>
+          <Name>Brand Name</Name>
+          <SourceColumnID>Brand Name</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="77a50889-6c7a-4228-a544-e61bc2261d02">
+          <ID>Diagonal Group</ID>
+          <Name>Diagonal Group</Name>
+          <SourceColumnID>Diagonal Group</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="3bf25a75-1dc6-485e-afa0-3b6e894dcd26">
+          <ID>Gender</ID>
+          <Name>Gender</Name>
+          <SourceColumnID>Gender</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="36ab88df-db8d-455e-8049-b33058870661">
+          <ID>Income Group</ID>
+          <Name>Income Group</Name>
+          <SourceColumnID>Income Group</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="737db385-f965-45ca-a59a-bdd521d472cb">
+          <ID>Marital Status</ID>
+          <Name>Marital Status</Name>
+          <SourceColumnID>Marital Status</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="96002f42-49df-4b4f-8ced-318f3641ccaf">
+          <ID>Resolution</ID>
+          <Name>Resolution</Name>
+          <SourceColumnID>Resolution</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="eb58eacb-5b22-49f2-b93b-c572a4a4a5f9">
+          <ID>Sales Key</ID>
+          <Name>Sales Key</Name>
+          <SourceColumnID>Sales Key</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="4d53e2e4-34d7-48b5-bce9-86ac9195c2d2">
+          <ID>Selling Price</ID>
+          <Name>Selling Price</Name>
+          <SourceColumnID>Selling Price</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="668f9f67-58d0-4878-bb98-a41e559fe8c4">
+          <ID>Smart TV</ID>
+          <Name>Smart TV</Name>
+          <SourceColumnID>Smart TV</SourceColumnID>
+        </Column>
+      </Columns>
+      <AllowDrillThrough>true</AllowDrillThrough>
+    </MiningModel>
+  </MiningModels>
+</MiningStructure>

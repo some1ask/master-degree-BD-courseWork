@@ -1,0 +1,408 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="f5dcb800-28d3-4614-a29c-25976417d6e5" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Телевізор</ID>
+  <Name>Телевізор</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="4" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4955" scrolltop="-5190" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="13256" y="19659" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01cc0000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Бренд" left="173" top="7400" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000b80b000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimBrands" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Телевізор" left="20" top="-2328" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3307" height="7328" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000eb0c0000a01c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimTVs" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="1274" top="4700" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_177]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="2" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="1673" y="7400" />
+              <point x="1673" y="5000" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-4955</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5190</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-2328</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="95da6210-8047-451f-9e04-30e93acf1355">
+    <DataSourceViewID>Coursework Tv DW</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="faf73501-944d-4b17-b4a5-72974dc2d083">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="d8e8790b-88c1-4007-9aff-d2420fe747c6">
+      <ID>Tv Key</ID>
+      <Name>Tv Key</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e868fe4b-70d7-4f81-92f4-ab520c10a1fd">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d94cb070-4979-424e-b1b6-178a713d7250">
+            <TableID>dbo_DimTVs</TableID>
+            <ColumnID>tvKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="325d8f57-6123-4843-a014-6576bd6d2d80">
+          <AttributeID>Brands Key</AttributeID>
+          <Name>Brands Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6ee7b56f-289f-4696-849f-b8a899f615c3">
+          <AttributeID>Tv Code</AttributeID>
+          <Name>Tv Code</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c069035a-b8c1-4ff7-a371-9258e2fb1ddd">
+          <AttributeID>Tv Name</AttributeID>
+          <Name>Tv Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="aaa16032-5b23-415a-8ef6-6d81ef5489dd">
+          <AttributeID>Cost</AttributeID>
+          <Name>Cost</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2bb7318a-1380-484a-a443-cc868406d0db">
+          <AttributeID>Diagonal</AttributeID>
+          <Name>Diagonal</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="eabdee8a-d627-407c-92b0-b675808e517a">
+          <AttributeID>Resolution</AttributeID>
+          <Name>Resolution</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1ca29473-d5d9-4f51-ad66-c2a367e01fd4">
+          <AttributeID>Matrix Type</AttributeID>
+          <Name>Matrix Type</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5d65147f-a6c7-4887-a6c2-c1cd02379d46">
+          <AttributeID>Shape</AttributeID>
+          <Name>Shape</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="aabb8592-f0fc-4755-88b4-ea448777f820">
+          <AttributeID>Color</AttributeID>
+          <Name>Color</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8195890b-82eb-43d7-82d2-0cfb67a030a6">
+          <AttributeID>Wireless Interface</AttributeID>
+          <Name>Wireless Interface</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="cc670b9b-4cf5-43b4-ab1f-01c64b68e598">
+          <AttributeID>Smart TV</AttributeID>
+          <Name>Smart TV</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c813f8cf-c27b-48fc-904e-6ea5010a8701">
+          <AttributeID>3D</AttributeID>
+          <Name>3D</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0fa58e5e-82c4-43d5-9dc9-7607207746fe">
+          <AttributeID>Year</AttributeID>
+          <Name>Year</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="26a6b991-9654-4f40-b0f6-758f215926c3">
+          <AttributeID>Brand Name</AttributeID>
+          <Name>Brand Name</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="11ce1f2d-95d1-4fa4-b941-5fa4e9d5b727">
+      <ID>Brands Key</ID>
+      <Name>Brands Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1f867c19-dc77-4b00-8595-6c837a73f82f">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e0aaa393-db7a-49cf-a228-63ae4d8ed0b6">
+            <TableID>dbo_DimBrands</TableID>
+            <ColumnID>brandsKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9d319c4b-9b8a-4355-96ba-fbd895a68040">
+      <ID>Tv Code</ID>
+      <Name>Tv Code</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3adfb1b6-644d-41ea-87fb-9a5405e90d09">
+          <DataType>WChar</DataType>
+          <DataSize>25</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f9e81d3c-6a9f-4f59-92ff-9515fc0f9caf">
+            <TableID>dbo_DimTVs</TableID>
+            <ColumnID>tvCode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d7d846b8-1db1-439f-b34b-904c2d6f5f65">
+      <ID>Tv Name</ID>
+      <Name>Tv Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="44574ecd-f87b-4536-9754-a0b561e6c090">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bcf468b1-f0c4-4e17-849d-bce1cdb6fd99">
+            <TableID>dbo_DimTVs</TableID>
+            <ColumnID>tvName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b226c3ee-2b8c-4011-9e68-783cc09859db">
+      <ID>Cost</ID>
+      <Name>Cost</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a0861e3d-0abf-41e8-a823-322aac22aad1">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0a4903e9-4b57-4de1-8621-73268e8464d2">
+            <TableID>dbo_DimTVs</TableID>
+            <ColumnID>cost</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="63041781-90f0-46c0-bde8-f6204131d95a">
+      <ID>Diagonal</ID>
+      <Name>Diagonal</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="490fd9ee-0009-46f5-93dc-06f8707cab60">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b0a41e0a-cb01-43e8-b3cf-81e1f0b4d193">
+            <TableID>dbo_DimTVs</TableID>
+            <ColumnID>diagonal</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="135c1aab-a8e9-4597-9e3f-b3206424cc8d">
+      <ID>Resolution</ID>
+      <Name>Resolution</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="45393ebb-4f8f-419d-8ae4-c3f53327980b">
+          <DataType>WChar</DataType>
+          <DataSize>25</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="85b7f68e-d9a1-4b98-907f-b06323b7f5a8">
+            <TableID>dbo_DimTVs</TableID>
+            <ColumnID>resolution</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f8852451-ff4a-4a89-946b-584e9b5cf9a9">
+      <ID>Matrix Type</ID>
+      <Name>Matrix Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1682806c-25e8-43f8-9db3-30533a96548c">
+          <DataType>WChar</DataType>
+          <DataSize>25</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="04de60d8-90eb-48a4-a7f3-77b0a9c58ea5">
+            <TableID>dbo_DimTVs</TableID>
+            <ColumnID>matrixType</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bfda8e4a-04d2-44d1-949e-3cb9e69d0f87">
+      <ID>Shape</ID>
+      <Name>Shape</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9527a4a0-a7fd-40d5-a7a9-1600311e0a24">
+          <DataType>WChar</DataType>
+          <DataSize>25</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9a92c161-1fb2-4129-8141-70737c5062f9">
+            <TableID>dbo_DimTVs</TableID>
+            <ColumnID>shape</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e98f47f9-13e6-4ff1-82cd-7c0b581b4573">
+      <ID>Color</ID>
+      <Name>Color</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="31584b67-803b-47bc-b4a2-788b0c798eb5">
+          <DataType>WChar</DataType>
+          <DataSize>25</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f62d4559-ac75-44d6-9705-7de301765cbd">
+            <TableID>dbo_DimTVs</TableID>
+            <ColumnID>color</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ef17fb04-f290-40ec-9454-cad8221e7139">
+      <ID>Wireless Interface</ID>
+      <Name>Wireless Interface</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="835dd5fd-e6c4-417e-9511-48525f78d27e">
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="89b3cb65-0a79-444c-80d8-ca51048f82d2">
+            <TableID>dbo_DimTVs</TableID>
+            <ColumnID>wirelessInterface</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="154a1455-89f8-453a-aefa-dd238b297115">
+      <ID>Smart TV</ID>
+      <Name>Smart TV</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4062029f-fa08-4940-a0c7-ee4ced43d966">
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bcbb6a15-4e25-46cb-b030-06d0823719f5">
+            <TableID>dbo_DimTVs</TableID>
+            <ColumnID>smartTV</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0fe78d43-3fb1-47fe-a65e-ee9b54bc827f">
+      <ID>3D</ID>
+      <Name>3D</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6fd73571-faf3-41c4-8bc2-dd44746f6e0d">
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="13eb75e1-90ab-45bd-8343-d886c10f4e3a">
+            <TableID>dbo_DimTVs</TableID>
+            <ColumnID>_x0033_D</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8aa5bd85-c51d-4568-a839-11e6fb9bdb16">
+      <ID>Year</ID>
+      <Name>Year</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="183a81a1-863e-4d21-b548-1fb81b21e222">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5b54dac1-f004-49f1-bafc-e224cbc15f44">
+            <TableID>dbo_DimTVs</TableID>
+            <ColumnID>year</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="34112a28-d4ec-4a80-ae5a-0d185fd345b4">
+      <ID>Brand Name</ID>
+      <Name>Brand Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="21cf23b1-ed6a-4214-8cee-57eb86aba719">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fd108e6c-7187-46b5-b447-e52ecb3d1a83">
+            <TableID>dbo_DimBrands</TableID>
+            <ColumnID>brandName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
